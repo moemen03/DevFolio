@@ -19,16 +19,7 @@ h2,h3,h4,h5,h6 {
     color: var(--black-color);
 }
 
-body:not(body:has(:target)) li a[href="#home"]::after,
-body:has(.home:target) li a[href="#home"]::after,
-body:has(.about:target) li a[href="#about"]::after,
-body:has(.services:target) li a[href="#services"]::after,
-body:has(.work:target) li a[href="#work"]::after,
-body:has(.blog:target) li a[href="#blog"]::after,
-body:has(.contact:target) li a[href="#contact"]::after {
-    background-color: var(--white-color);
-    width: 55%;
-}
+
 
 body:has(#checkbox:checked) .menu-bar i.fa-xmark {
     display: block;
@@ -125,6 +116,10 @@ header .menu-bar {
 header .menu-bar i.fa-xmark {
     display: none;
 }
+
+
+
+
 
 /* END NAVBAR */
 
