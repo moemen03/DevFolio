@@ -119,6 +119,17 @@ header .menu-bar i.fa-xmark {
 
 
 
+body:not(body:has(:target)) li a[href="#home"]::after,
+body:has(#home:target) li a[href="#home"]::after,
+body:has(#about:target) li a[href="#about"]::after,
+body:has(#services:target) li a[href="#services"]::after,
+body:has(#work:target) li a[href="#work"]::after,
+body:has(#blog:target) li a[href="#blog"]::after,
+body:has(#contact:target) li a[href="#contact"]::after {
+    background-color: var(--white-color);
+    width: 55%;
+}
+
 
 
 /* END NAVBAR */
